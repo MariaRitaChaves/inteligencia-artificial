@@ -1,59 +1,63 @@
 :root {
-    --cor-fundo: #002e18;
-    --cor-principal: #ffffff;
-    --cor-secundaria: #008346;
-    --cor-destaque: #000000;
-    --cor-texto: #000000;
-  }
-  
-  body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  .caixa-principal {
-    background-color: var(--cor-principal);
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(43, 222, 253, 0.2);
-  }
-  
-  h1 {
-    color: var(--cor-destaque);
-    margin-bottom: 20px;
-  }
-  
-  button {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px 5px;
-    cursor: pointer;
-    width: 90%;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  button:hover {
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
-    transform: scale(1.02);
-  }
-  
-  .texto-resultado {
-    margin-top: 20px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
+  --cor-fundo: #E9F5EC;           /* Verde pastel claro de fundo */
+  --cor-principal: #CDE9D8;       /* Verde mais denso para a caixa principal */
+  --cor-secundaria: #A5D6B5;      /* Botões / detalhes */
+  --cor-destaque: #34A853;        /* Destaque moderno em verde Google */
+  --cor-texto: #1B3B2F;           /* Texto escuro suave */
+  --cor-hover: #7BC98F;           /* Efeito hover suave */
+  --cor-borda: #9BCBA7;           /* Borda/sombra clara */
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.caixa-principal {
+  background-color: var(--cor-principal);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--cor-borda);
+}
+
+h1 {
+  color: var(--cor-destaque);
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+button {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+  width: 90%;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--cor-hover);
+  transform: scale(1.02);
+}
+
+.texto-resultado {
+  margin-top: 25px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--cor-texto);
+}
